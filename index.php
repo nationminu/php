@@ -1,3 +1,3 @@
 <?php
-echo "This Container id : " . @$_SERVER['HOSTNAME']; 
+echo "This Container id : " . gethostname();
 ?>
