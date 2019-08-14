@@ -1,12 +1,6 @@
 <?php
-// bad example
-function expexiveOperation() {
-    sleep(1);
-    return "Hello";
+// CPU stress test
+for($i = 0; $i < 100000000; $i++) {
+     $a += $i;
 }
-for ($i=0; $i<10; $i++) {
-    $value = expexiveOperation();
-    echo $value;
-}
-
 ?>
