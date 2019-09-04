@@ -1,8 +1,7 @@
 <?php
 echo "WEBHOOK TEST : \n" ;  
-$hookfile=date("ymdhis").".json"
-  
-$myfile = null; 
+
+$hookfile=date("ymdhis").".json"; 
 $myfile = fopen("/opt/app-root/src/$hookfile", "w") or die("Unable to open file!");
 
 $txt = json_decode(json_encode($_POST));
