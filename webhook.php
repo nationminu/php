@@ -1,15 +1,12 @@
 <?php
 echo "WEBHOOK TEST : \n" ;  
 
-$hookfile=date("ymdhis").".json"; 
-$myfile = fopen("/opt/app-root/src/$hookfile", "w") or die("Unable to open file!");
+$hookfile="test-".date('ymdhis').".json";
 
-$txt = json_encode($_POST);
-fwrite($myfile, $txt);
-// $txt = json_decode(json_encode($_GET));
-//fwrite($myfile, $txt);
+$input = @file_get_contents("php://input");
+$event_json = json_encode(json_decode($input)); 
 
-fclose($myfile); 
+file_put_contents("/opt/app-root/src/$hookfile", $event_json);
 
 echo "- Done\n" ;  
 ?>
