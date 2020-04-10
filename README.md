@@ -113,3 +113,20 @@ AddType application/x-httpd-php .php .phtml
 AddType application/x-httpd-php-source .phps
 
 ```
+```
+memcache
+
+/usr/local/php/pecl install memcached-2.2.0
+
+/usr/local/apache/conf/php.ini
+[memcache]
+extension_dir=/usr/lib64/php/modules/
+extension=memcache.so
+;memcache.allow_failover=1
+;memcache.max_failover_attempts=100
+;memcache.chunk_size=32768
+;memcache.default_port=11211
+session.save_handler=memcache
+session.save_path="127.0.0.1:11211"
+```
+
