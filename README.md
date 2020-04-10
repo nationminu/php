@@ -56,7 +56,7 @@ ln -s /usr/lib64/libgdbm_compat.so /usr/local/lib64/libdbm.so \
 ```
 
 ```
-https://www.php.net/distributions/php-5.4.45.tar.gz
+wget https://www.php.net/distributions/php-5.4.45.tar.gz
 
 ./configure \
 --prefix=/usr/local/php \
