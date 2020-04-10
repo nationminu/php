@@ -107,4 +107,9 @@ https://www.php.net/distributions/php-5.4.45.tar.gz
 
 make
 make install
+
+conf/extra/httpd-php.conf
+AddType application/x-httpd-php .php .phtml
+AddType application/x-httpd-php-source .phps
+
 ```
