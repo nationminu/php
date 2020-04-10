@@ -2,12 +2,12 @@
 
 php 5.6 install on centos
 
-`
+```
 yum group install "Development Tools"
 yum install pcre-devel zlib-devel openssl-devel
-`
+```
 
-`
+```
 ./configure \
 --prefix=/usr/local/apache \
 --enable-mods-shared=all \
@@ -26,9 +26,9 @@ yum install pcre-devel zlib-devel openssl-devel
 
 make
 make install
-`
+```
 
-`
+```
 # yum install epel-release
 
 yum install libxml2-devel bzip2-dvel libcurl-devel db4-devel
@@ -44,14 +44,12 @@ yum install libc-client-devel
 yum install openldap-devel
 yum install libmcrypt-devel
 yum install libedit-devel
-yum install libtidy-devel
-`
+yum install libtidy-devel 
 
-`
 ln -s /usr/lib64/libgdbm_compat.so /usr/local/lib64/libdbm.so \
-`
+```
 
-`
+```
 ./configure \
 --prefix=/usr/local/php \
 --with-apxs2=/usr/local/apache/bin/apxs \
@@ -98,4 +96,4 @@ ln -s /usr/lib64/libgdbm_compat.so /usr/local/lib64/libdbm.so \
 --with-tidy \
 --with-libexpat-dir=/usr \
 --with-xmlrpc
-`
+```
