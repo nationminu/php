@@ -115,6 +115,7 @@ AddType application/x-httpd-php-source .phps
 ```
 ```
 memcache
+yum install -y libmemcached-devel
 
 /usr/local/php/pecl install memcached-2.2.0
 
