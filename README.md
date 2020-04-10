@@ -30,8 +30,12 @@ make install
 
 ```
 # yum install epel-release
+# yum -y install libxml2-devel bzip2-dvel libcurl-devel db4-devel libjpeg-devel libvpx-devel gdbm-devel libpng-devel libXpm-devel freetype-devel t1lib-devel gmp-devel libc-client-devel openldap-devel libmcrypt-devel libedit-devel libtidy-devel 
 
-yum install libxml2-devel bzip2-dvel libcurl-devel db4-devel
+yum install libxml2-devel 
+yum install bzip2-dvel 
+yum install libcurl-devel 
+yum install db4-devel
 yum install libjpeg-devel
 yum install libvpx-devel
 yum install gdbm-devel
