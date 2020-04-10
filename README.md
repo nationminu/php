@@ -5,6 +5,7 @@ php 5.6 install on centos 7
 ```
 yum group install "Development Tools"
 yum install pcre-devel zlib-devel openssl-devel
+yum install apr-devel apr-util-devel
 ```
 
 ```
