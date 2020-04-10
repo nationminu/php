@@ -8,6 +8,8 @@ yum install pcre-devel zlib-devel openssl-devel
 ```
 
 ```
+wget http://apache.tt.co.kr//httpd/httpd-2.4.43.tar.gz
+
 ./configure \
 --prefix=/usr/local/apache \
 --enable-mods-shared=all \
@@ -100,4 +102,7 @@ ln -s /usr/lib64/libgdbm_compat.so /usr/local/lib64/libdbm.so \
 --with-tidy \
 --with-libexpat-dir=/usr \
 --with-xmlrpc
+
+make
+make install
 ```
