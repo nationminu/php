@@ -116,12 +116,18 @@ AddType application/x-httpd-php-source .phps
 ```
 memcache
 yum install -y libmemcached-devel
+#/usr/local/php/pecl install memcached-3.0.8
 
-/usr/local/php/pecl install memcached-2.2.0
+wget https://pecl.php.net/get/memcache-3.0.8.tgz
+
+/usr/local/php/bin/phpize
+./configure --with-php-config=/usr/local/php/bin/php-config 
+make 
+make install
 
 /usr/local/apache/conf/php.ini
 [memcache]
-extension_dir=/usr/lib64/php/modules/
+extension_dir=/usr/lib64/extensions/no-debug-zts-20100525/
 extension=memcache.so
 ;memcache.allow_failover=1
 ;memcache.max_failover_attempts=100
