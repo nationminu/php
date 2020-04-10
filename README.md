@@ -1,6 +1,6 @@
 # php
 
-php 5.6 install on centos
+php 5.6 install on centos 7
 
 ```
 yum group install "Development Tools"
